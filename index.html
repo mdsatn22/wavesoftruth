@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UGAT — Socioeconomic Journal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+  --paper:#eee5d2;
+
+  --paper2:#e4d7bf;
+
+  --ink:#30251d;
+
+  --muted:#786957;
+
+  --brown:#684832;
+
+  --rust:#985c3d;
+
+  --line:#b9a58b;
+
+  --dark:#241b16;
+
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+
+  background:var(--paper);
+
+  color:var(--ink);
+
+  font-family:'DM Sans',sans-serif;
+
+  min-height:100vh;
+
+}
+
+button{font:inherit}
+
+.site-header{
+
+  background:var(--dark);
+
+  color:#f0e5d0;
+
+  padding:18px 5vw 0;
+
+  border-bottom:4px solid var(--rust);
+
+  position:relative;
+
+  z-index:10;
+
+}
+
+.topline{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  border-bottom:1px solid #665342;
+
+  padding-bottom:12px;
+
+  font-family:'Special Elite',serif;
+
+  font-size:11px;
+
+  letter-spacing:2px;
+
+  color:#c5b49a;
+
+}
+
+.masthead{
+
+  text-align:center;
+
+  padding:17px 0 20px;
+
+}
+
+.masthead h1{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(42px,8vw,82px);
+
+  line-height:1;
+
+  letter-spacing:5px;
+
+  font-weight:800;
+
+}
+
+.masthead h1 span{color:#c28b5e}
+
+.masthead p{
+
+  font-family:'Special Elite',serif;
+
+  font-size:11px;
+
+  letter-spacing:4px;
+
+  margin-top:9px;
+
+  color:#d0bda2;
+
+}
+
+.nav-wrap{
+
+  display:flex;
+
+  justify-content:center;
+
+  border-top:1px solid #665342;
+
+}
+
+nav{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:4px;
+
+  flex-wrap:wrap;
+
+}
+
+nav button{
+
+  border:0;
+
+  background:transparent;
+
+  color:#e8dcc8;
+
+  padding:14px 18px;
+
+  font-size:11px;
+
+  letter-spacing:1.7px;
+
+  font-weight:700;
+
+  text-transform:uppercase;
+
+  cursor:pointer;
+
+  border-bottom:3px solid transparent;
+
+  transition:.2s;
+
+}
+
+nav button:hover,nav button.active{
+
+  color:#d8a77c;
+
+  border-bottom-color:#d8a77c;
+
+}
+
+.menu-btn{
+
+  display:none;
+
+  background:none;
+
+  border:1px solid #94765d;
+
+  color:#f1e6d5;
+
+  padding:8px 12px;
+
+  cursor:pointer;
+
+}
+
+main{min-height:75vh}
+
+.page{
+
+  display:none;
+
+  max-width:1200px;
+
+  margin:auto;
+
+  padding:42px 5vw 70px;
+
+  animation:fade .35s ease;
+
+}
+
+.page.active{display:block}
+
+@keyframes fade{
+
+  from{opacity:0;transform:translateY(8px)}
+
+  to{opacity:1;transform:translateY(0)}
+
+}
+
+.kicker{
+
+  font-family:'Special Elite',serif;
+
+  color:var(--rust);
+
+  letter-spacing:2px;
+
+  font-size:12px;
+
+  text-transform:uppercase;
+
+}
+
+.section-heading{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(38px,6vw,64px);
+
+  line-height:1.05;
+
+  margin:10px 0 14px;
+
+}
+
+.section-intro{
+
+  max-width:720px;
+
+  color:var(--muted);
+
+  line-height:1.8;
+
+  font-size:14px;
+
+}
+
+.rule{
+
+  border:0;
+
+  border-top:1px solid var(--line);
+
+  margin:25px 0;
+
+}
+
+.double-rule{
+
+  border:0;
+
+  border-top:4px double var(--brown);
+
+  margin:22px 0;
+
+}
+
+.home-hero{
+
+  display:grid;
+
+  grid-template-columns:1.2fr .8fr;
+
+  gap:35px;
+
+  align-items:center;
+
+  padding:30px 0 40px;
+
+  border-bottom:1px solid var(--line);
+
+}
+
+.home-hero h2{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(44px,7vw,82px);
+
+  line-height:1.03;
+
+  margin:16px 0;
+
+}
+
+.home-hero h2 em{color:var(--rust);font-weight:500}
+
+.home-hero p{
+
+  max-width:600px;
+
+  color:var(--muted);
+
+  line-height:1.9;
+
+  font-size:15px;
+
+}
+
+.hero-stamp{
+
+  background:var(--brown);
+
+  color:var(--paper);
+
+  padding:35px 28px;
+
+  text-align:center;
+
+  transform:rotate(1.5deg);
+
+  box-shadow:8px 8px 0 var(--paper2);
+
+}
+
+.hero-stamp .stamp-top{
+
+  font-family:'Special Elite',serif;
+
+  letter-spacing:3px;
+
+  font-size:11px;
+
+}
+
+.hero-stamp strong{
+
+  display:block;
+
+  font-family:'Playfair Display',serif;
+
+  font-size:42px;
+
+  line-height:1.1;
+
+  margin:20px 0;
+
+}
+
+.hero-stamp p{
+
+  color:#e4d4bd;
+
+  font-size:12px;
+
+  line-height:1.7;
+
+}
+
+.read-btn{
+
+  display:inline-block;
+
+  margin-top:22px;
+
+  padding:12px 20px;
+
+  background:var(--rust);
+
+  color:#fff4e5;
+
+  border:0;
+
+  cursor:pointer;
+
+  text-transform:uppercase;
+
+  letter-spacing:1.5px;
+
+  font-size:11px;
+
+  font-weight:700;
+
+}
+
+.read-btn:hover{background:var(--dark)}
+
+.home-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:22px;
+
+  margin-top:30px;
+
+}
+
+.home-card{
+
+  border-top:3px solid var(--brown);
+
+  padding:18px 0;
+
+}
+
+.home-card small,.article-label{
+
+  font-family:'Special Elite',serif;
+
+  text-transform:uppercase;
+
+  color:var(--rust);
+
+  letter-spacing:1.5px;
+
+  font-size:11px;
+
+}
+
+.home-card h3{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:24px;
+
+  line-height:1.2;
+
+  margin:12px 0;
+
+}
+
+.home-card p{
+
+  font-size:13px;
+
+  line-height:1.8;
+
+  color:var(--muted);
+
+}
+
+/* HOME PAGE VIDEO */
+
+.home-video-section{
+
+  margin-top:38px;
+
+  padding:30px 0 10px;
+
+  border-top:4px double var(--brown);
+
+}
+
+.home-video-heading{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(30px,5vw,44px);
+
+  line-height:1.15;
+
+  margin:12px 0;
+
+}
+
+.home-video-description{
+
+  max-width:720px;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.8;
+
+  margin-bottom:24px;
+
+}
+
+.video-frame{
+
+  position:relative;
+
+  width:100%;
+
+  aspect-ratio:16 / 9;
+
+  background:var(--dark);
+
+  overflow:hidden;
+
+  border:5px solid var(--brown);
+
+  box-shadow:8px 8px 0 var(--paper2);
+
+}
+
+.video-frame iframe{
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+
+  height:100%;
+
+  border:0;
+
+}
+
+.article-list{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:22px;
+
+  margin-top:28px;
+
+}
+
+.article{
+
+  border:1px solid var(--line);
+
+  background:rgba(255,250,239,.35);
+
+  padding:23px;
+
+  align-self:start;
+
+}
+
+.article:first-child{border-top:4px solid var(--brown)}
+
+.article h3{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(24px,3vw,32px);
+
+  line-height:1.2;
+
+  margin:10px 0 14px;
+
+}
+
+.article .dek{
+
+  font-size:13px;
+
+  color:var(--muted);
+
+  line-height:1.7;
+
+  margin-bottom:15px;
+
+}
+
+.article details{border-top:1px solid var(--line);padding-top:14px}
+
+.article summary{
+
+  list-style:none;
+
+  cursor:pointer;
+
+  color:var(--rust);
+
+  text-transform:uppercase;
+
+  letter-spacing:1.5px;
+
+  font-size:11px;
+
+  font-weight:700;
+
+}
+
+.article summary::-webkit-details-marker{display:none}
+
+.article summary:after{content:"＋";float:right;font-size:16px}
+
+.article details[open] summary:after{content:"−"}
+
+.article-body{
+
+  padding-top:18px;
+
+  font-family:'Playfair Display',serif;
+
+  font-size:16px;
+
+  line-height:1.9;
+
+}
+
+.article-body p{margin-bottom:17px}
+
+.references{
+
+  border-top:1px solid var(--line);
+
+  margin-top:20px;
+
+  padding-top:14px;
+
+  font-family:'DM Sans',sans-serif;
+
+  font-size:11px;
+
+  line-height:1.8;
+
+  color:var(--muted);
+
+  overflow-wrap:anywhere;
+
+}
+
+.references strong{
+
+  display:block;
+
+  color:var(--brown);
+
+  text-transform:uppercase;
+
+  letter-spacing:1px;
+
+  margin-bottom:5px;
+
+}
+
+.references a{color:var(--rust)}
+
+.feature-banner{
+
+  background:var(--brown);
+
+  color:var(--paper);
+
+  padding:28px;
+
+  margin:25px 0;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.feature-banner h3{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(25px,4vw,40px);
+
+}
+
+.feature-banner p{
+
+  max-width:400px;
+
+  color:#dfcdb5;
+
+  font-size:12px;
+
+  line-height:1.7;
+
+}
+
+.balita-mark{
+
+  font-family:'Special Elite',serif;
+
+  color:var(--rust);
+
+  font-size:13px;
+
+  letter-spacing:3px;
+
+  border-bottom:3px double var(--brown);
+
+  padding-bottom:12px;
+
+  margin:20px 0;
+
+}
+
+.about-page{
+
+  max-width:none;
+
+  width:100%;
+
+  min-height:calc(100vh - 180px);
+
+  padding:0;
+
+  position:relative;
+
+  background:#201812;
+
+  overflow:hidden;
+
+}
+
+.about-image{
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  opacity:.68;
+
+}
+
+.about-overlay{
+
+  position:relative;
+
+  z-index:1;
+
+  min-height:calc(100vh - 180px);
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  padding:70px 8vw;
+
+  color:#fff3df;
+
+  background:linear-gradient(90deg,rgba(28,19,13,.75),rgba(28,19,13,.25),rgba(28,19,13,.75));
+
+}
+
+.about-overlay .kicker{color:#e0b78f}
+
+.about-overlay h2{
+
+  font-family:'Playfair Display',serif;
+
+  font-size:clamp(48px,9vw,100px);
+
+  margin:15px 0;
+
+  text-shadow:0 3px 20px #1b1009;
+
+}
+
+.about-overlay p{
+
+  max-width:720px;
+
+  line-height:1.9;
+
+  font-size:15px;
+
+  color:#f2e3cf;
+
+}
+
+.about-note{
+
+  border-top:1px solid rgba(255,255,255,.5);
+
+  margin-top:30px;
+
+  padding-top:20px;
+
+  font-family:'Special Elite',serif;
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+}
+
+.site-footer{
+
+  background:var(--dark);
+
+  color:#c9b89f;
+
+  text-align:center;
+
+  padding:22px 15px;
+
+  font-family:'Special Elite',serif;
+
+  font-size:11px;
+
+  letter-spacing:1.5px;
+
+}
+
+.site-footer span{color:#d49a6d}
+
+.back-top{
+
+  position:fixed;
+
+  right:18px;
+
+  bottom:18px;
+
+  background:var(--brown);
+
+  color:#fff0dc;
+
+  border:0;
+
+  width:42px;
+
+  height:42px;
+
+  border-radius:50%;
+
+  cursor:pointer;
+
+  font-size:18px;
+
+  z-index:5;
+
+  box-shadow:0 3px 12px #0003;
+
+}
+
+@media(max-width:760px){
+
+  .site-header{padding:14px 5vw 0}
+
+  .topline{font-size:9px;letter-spacing:1px}
+
+  .masthead{padding:18px 0}
+
+  .masthead h1{font-size:48px}
+
+  .masthead p{font-size:9px;letter-spacing:2px}
+
+  .nav-wrap{justify-content:flex-end;position:relative}
+
+  .menu-btn{display:block;margin:9px 0}
+
+  nav{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    right:0;
+
+    left:0;
+
+    background:var(--dark);
+
+    padding:8px 12px 14px;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    box-shadow:0 8px 12px #0003;
+
+  }
+
+  nav.open{display:flex}
+
+  nav button{text-align:left;padding:13px;border-bottom:1px solid #554333}
+
+  .page{padding:30px 6vw 55px}
+
+  .home-hero{grid-template-columns:1fr;gap:25px}
+
+  .hero-stamp{max-width:440px;margin:auto;width:100%}
+
+  .home-grid{grid-template-columns:1fr}
+
+  .article-list{grid-template-columns:1fr}
+
+  .feature-banner{display:block}
+
+  .feature-banner p{margin-top:12px}
+
+  .about-page{min-height:calc(100vh - 160px)}
+
+  .about-overlay{min-height:calc(100vh - 160px)}
+
+  .home-video-section{margin-top:30px}
+
+  .video-frame{
+
+    border-width:3px;
+
+    box-shadow:5px 5px 0 var(--paper2);
+
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  *,*::before,*::after{
+
+    scroll-behavior:auto!important;
+
+    animation:none!important;
+
+    transition:none!important
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="topline">
+
+    <span>THE SOCIOECONOMIC JOURNAL</span>
+
+    <span>ISSUE NO. 01 · PHILIPPINES</span>
+
+  </div>
+
+  <div class="masthead">
+
+    <h1>UGAT<span>.</span></h1>
+
+    <p>UNDERSTANDING THE ROOTS OF OUR SOCIETY</p>
+
+  </div>
+
+  <div class="nav-wrap">
+
+    <button class="menu-btn" id="menuToggle" aria-expanded="false">☰ MENU</button>
+
+    <nav id="navigation" aria-label="Main navigation">
+
+      <button class="active" data-page="home">Home</button>
+
+      <button data-page="editorial">Editorial</button>
+
+      <button data-page="feature">Feature</button>
+
+      <button data-page="balita">Balita</button>
+
+      <button data-page="kolum">Kolum</button>
+
+      <button data-page="about">About Us</button>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<main>
+
+<!-- HOME -->
+
+<section class="page active" id="home">
+
+  <div class="home-hero">
+
+    <div>
+
+      <div class="kicker">A closer look at the society we share</div>
+
+      <h2>Stories rooted in <em>real life.</em></h2>
+
+      <p>
+
+        Society is shaped by the opportunities people receive, the challenges
+
+        they face, and the systems that influence their everyday lives.
+
+        From the cost of food to access to education, socioeconomic issues
+
+        are not distant ideas. They are realities experienced by Filipino
+
+        families every day.
+
+      </p>
+
+      <button class="read-btn" onclick="showPage('editorial')">Explore our stories →</button>
+
+    </div>
+
+    <div class="hero-stamp">
+
+      <div class="stamp-top">OUR CENTRAL QUESTION</div>
+
+      <strong>Who gets the chance to move forward?</strong>
+
+      <p>Examining inequality, livelihood, education, poverty, and the realities behind economic progress.</p>
+
+    </div>
+
+  </div>
+
+  <div class="double-rule"></div>
+
+  <div class="kicker">Inside this issue</div>
+
+  <h2 class="section-heading" style="font-size:38px">The issues that shape us.</h2>
+
+  <div class="home-grid">
+
+    <article class="home-card">
+
+      <small>01 / Inequality</small>
+
+      <h3>When opportunity is not equal</h3>
+
+      <p>Economic inequality is more than the difference between incomes. It also affects who can access education, work, and a better future.</p>
+
+    </article>
+
+    <article class="home-card">
+
+      <small>02 / Food security</small>
+
+      <h3>The struggle behind every meal</h3>
+
+      <p>Food is a basic necessity, yet many households continue to face the challenge of putting nutritious meals on the table.</p>
+
+    </article>
+
+    <article class="home-card">
+
+      <small>03 / Livelihood</small>
+
+      <h3>Those who keep communities going</h3>
+
+      <p>Farmers and workers play an essential role in society, but their hard work does not always guarantee financial security.</p>
+
+    </article>
+
+    <article class="home-card">
+
+      <small>04 / Disaster and poverty</small>
+
+      <h3>When calamity deepens hardship</h3>
+
+      <p>Natural disasters can destroy homes, livelihoods, and the limited resources of vulnerable communities.</p>
+
+    </article>
+
+    <article class="home-card">
+
+      <small>05 / Education</small>
+
+      <h3>A future that should be for everyone</h3>
+
+      <p>Every child deserves quality education, regardless of their family's income or circumstances.</p>
+
+    </article>
+
+    <article class="home-card">
+
+      <small>06 / Workers</small>
+
+      <h3>Making a living in a changing economy</h3>
+
+      <p>As everyday expenses rise, many Filipino workers find it difficult to make their earnings cover their family's needs.</p>
+
+    </article>
+
+  </div>
+
+  <hr class="double-rule">
+
+  <p class="section-intro">
+
+    UGAT looks beyond headlines to examine the roots of socioeconomic
+
+    challenges and the people whose lives are affected by them.
+
+  </p>
+
+  <!-- NEW YOUTUBE VIDEO AT THE BOTTOM OF HOME -->
+
+  <section class="home-video-section">
+
+    <div class="kicker">Watch · Learn · Understand</div>
+
+    <h2 class="home-video-heading">See the Bigger Picture.</h2>
+
+    <p class="home-video-description">
+
+      Explore the realities behind the socioeconomic issues that shape
+
+      our society. Watch the video below and take a closer look at the
+
+      stories and challenges that affect our communities.
+
+    </p>
+
+    <div class="video-frame">
+
+      <iframe
+
+        src="https://www.youtube.com/embed/GF-4tH2642I"
+
+        title="UGAT — Socioeconomic Journal Video"
+
+        loading="lazy"
+
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+        referrerpolicy="strict-origin-when-cross-origin"
+
+        allowfullscreen>
+
+      </iframe>
+
+    </div>
+
+  </section>
+
+</section>
+
+<!-- EDITORIAL -->
+
+<section class="page" id="editorial">
+
+  <div class="kicker">Opinions · Perspectives · Society</div>
+
+  <h2 class="section-heading">Editorial</h2>
+
+  <p class="section-intro">Examining the systems and social realities that influence the lives of Filipinos.</p>
+
+  <hr class="double-rule">
+
+  <div class="article-list">
+
+    <article class="article">
+
+      <div class="article-label">Editorial 01 · Economic inequality</div>
+
+      <h3>Inequality: Where does it stop?</h3>
+
+      <p class="dek">A society cannot call itself progressive when opportunity remains out of reach for those who need it most.</p>
+
+      <details>
+
+        <summary>Read full editorial</summary>
+
+        <div class="article-body">
+
+          <p>As society continues to advance each day, the divide between the social classes becomes harder to ignore as it continues to grow. How is it that one person can afford to spend hundreds, if not thousands, on things they do not need, while another person can barely afford a decent meal? In today’s society, wealth has become one of the primary factors that determines a person’s quality of life. Whether one is rich or poor, the gap between social classes continues to widen. Why does society allow it to continue? At what point does this inequality become too much?</p>
+
+          <p>The Philippines continues to face a rapid growth in economic disparities despite its progress in development. According to the Philippine Statistics Authority’s (PSA) 2025 Family Income and Expenditure Survey showed, families belonging in the highest income decile earned an average income of around ₱1.03 million annually, while families that belong in the lowest income decile earn only around ₱170,580 annually. This just goes to show the questionable difference between the financial distribution for Filipino families and opportunities being bypassed and given to more wealthier families. While economic growth may be beneficial for a country’s growth, it does not necessarily mean its benefits are being distributed among the people equally.</p>
+
+          <p>However, economic inequality should not be treated as an inevitable consequence of a developing society. It may be expected for a difference in income to be noticed, the problem only arises when wealth becomes the factor in determining who gets better access and who is left struggling to make ends meet. A person’s financial background should not dictate how far they are allowed to go in life, nor can poverty be the barrier to limit one’s abilities to be able to show their potential. Economic progress should create opportunities for everyone, not just those who can afford it.</p>
+
+          <p>But, another perspective worth considering is that financial stability is an essential part of an individual's journey towards success. So that means not every difference should automatically be considered unfair, as pursuing a dream or a better future requires financial support, whether through education, specialized lessons or other opportunities that require resources. An individual’s circumstances and family backgrounds may contribute to the disparities of financial stability and the opportunities being given. So therefore it’s important to recognize how social status can influence a person’s future occupation, career choice, and maybe even the interests they are able to pursue.</p>
+
+          <p>Nevertheless, having different financial circumstances should not mean having unequal access to opportunities. While wealth and personal decisions may contribute largely to an individual’s success, not everyone has the same resources to even begin with. For some, pursuing higher education is an investment they would not worry too much on, while for some it’s an investments that can take time and energy to acquire. Even meeting the expenses of basic education can be a financial burden. This creates a cycle in which those who already have greater access to opportunities than most have, can advance comfortably while does who don’t are left to struggle to catch up</p>
+
+          <p>At the end of the day, inequality should not be simply measured through financial opportunities, instead, it should be measured through the limited amounts of opportunities being given to an individual just for their financial status. Financial stability may be earned through hard work, sacrifices, and personal decisions, but no individual should be deprived of the chance to succeed because of the circumstances they were born into. A society’s progress should not be determined solely by the prosperity of its wealthy citizens, but by its ability to provide opportunities for those who have the least. After all, how can we call it progress when millions are still struggling to catch up? Inequality may not disappear overnight, but the opportunity to overcome it should never be out of reach. So, where does it stop?</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>Reference</strong>
+
+          Philippine Statistics Authority. (2026, August 26). Average annual family income of Filipino families increased by 16.5 percent in 2025.
+
+          <a href="https://psa.gov.ph/statistics/income-expenditure/fies/node/1684084083" target="_blank" rel="noopener">PSA report</a>
+
+        </div>
+
+      </details>
+
+    </article>
+
+    <article class="article">
+
+      <div class="article-label">Editorial 02 · Food security</div>
+
+      <h3>Philippines: Food Security Outlook 2024–2025</h3>
+
+      <p class="dek">Hunger remains a persistent challenge, revealing the gap between economic growth and everyday access to nutritious food.</p>
+
+      <details>
+
+        <summary>Read full editorial</summary>
+
+        <div class="article-body">
+
+          <p>Hunger remains one of the Philippines’ most persistent and troubling challenges. Despite economic growth in recent years, millions of Filipino families still struggle to secure enough nutritious food every day. Food security when all people have consistent access to sufficient, safe, and healthy food remains an unmet goal for far too many households across the country.</p>
+
+          <p>Recent data shows just how serious this issue is. According to the Philippine Statistics Authority (2025), over 15.6% of Filipino families experienced involuntary hunger in the past yearthat is roughly 4.4 million households. The Food and Agriculture Organization (FAO) reports that nearly 19 million Filipinos cannot afford a healthy diet, meaning they survive mostly on cheap, filling food that lacks proper nutrition. In urban areas like Metro Manila, the situation is even harder: rising prices of rice, vegetables, and protein sources force low-income families to skip meals or reduce portion sizes just to get through the day.</p>
+
+          <p>High food prices are the biggest barrier. Inflation has pushed the cost of basic commodities beyond what many families can afford. At the same time, natural disasters such as typhoons and droughts regularly destroy crops and farm infrastructure, disrupting food supply and driving prices up further. The World Food Programme (WFP, 2024) notes that the Philippines is one of the most disaster-prone nations in the world, making food systems fragile and unreliable. Many farmers themselves remain poor, creating a sad irony: those who grow our food are often the ones who cannot afford enough of it.</p>
+
+          <p>Hunger is not just a humanitarian issue it affects children’s development, people’s health, and the country’s future productivity. The government must strengthen social protection programs like the Pantawid Pamilyang Pilipino Program, invest in sustainable agriculture to boost local food production, and improve disaster resilience in food systems. Achieving food security requires coordinated action from the government, private sector, and communities. No Filipino family should ever go to bed hungry.</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>References</strong>
+
+          Philippine Statistics Authority (2025).<br>
+
+          Food and Agriculture Organization (FAO).<br>
+
+          World Food Programme (WFP, 2024).
+
+        </div>
+
+      </details>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- FEATURE -->
+
+<section class="page" id="feature">
+
+  <div class="kicker">People · Livelihood · Everyday realities</div>
+
+  <h2 class="section-heading">Feature</h2>
+
+  <p class="section-intro">Stories that bring attention to the people and experiences behind socioeconomic issues.</p>
+
+  <div class="feature-banner">
+
+    <div>
+
+      <div class="article-label" style="color:#e4b58b">A closer look</div>
+
+      <h3>Behind every statistic is a human story.</h3>
+
+    </div>
+
+    <p>Explore the lives, struggles, and contributions of people who are often overlooked in conversations about progress.</p>
+
+  </div>
+
+  <div class="article-list">
+
+    <article class="article">
+
+      <div class="article-label">Feature 01 · Agriculture</div>
+
+      <h3>The Farmers Behind the Food We Eat</h3>
+
+      <p class="dek">The people who grow our food deserve more than our appreciation. They deserve fair opportunities and support.</p>
+
+      <details>
+
+        <summary>Read full feature</summary>
+
+        <div class="article-body">
+
+          <p>We eat rice, veg, fruit and all sorts of other things every day. We can just walk into the market or the supermarket and buy it all, but have we ever thought about the people who actually grow that food and work so hard to get it on our plates? Those people are our farmers and many of them are in a very difficult position.</p>
+
+          <p>Being a farmer is no easy proposition. You wake up early, you're out in the sun for hours on end and you're working in the field to grow your crops. You don't always know if you're going to make enough money. A single typhoon, a few days of torrential rain or a spell of extreme heat can wipe out your crop and you can lose months of work in that time.</p>
+
+          <p>Another problem the farmers face is the cost of the inputs. Seeds, fertiliser and all the other stuff you need to grow your crop is very expensive. You need it to grow your crop, so it's a real problem when you're not making very much on the crop itself.</p>
+
+          <p>What's even more sad is that the farmers who feed millions of people are themselves still in a position where they can't always afford to feed their own families. They work incredibly hard every day, but their pay is often not sufficient to meet their own basic needs.</p>
+
+          <p>As students we may not have that experience ourselves but we certainly shouldn't ignore it. We can start with just appreciating the food we're eating, not wasting it and where possible supporting local farmers.</p>
+
+          <p>Farmers are entitled to a decent return on their labour. They are entitled to support and to better opportunities. We mustn't forget that the food we eat every day doesn't just magically appear on our plates. It's the result of someone working hard to grow it.</p>
+
+          <p>Behind every meal is a farmer who deserves our appreciation.</p>
+
+        </div>
+
+      </details>
+
+    </article>
+
+    <article class="article">
+
+      <div class="article-label">Feature 02 · Poverty and society</div>
+
+      <h3>Poverty and Crime: is survival becoming more difficult?</h3>
+
+      <p class="dek">Understanding the difficult circumstances that can shape people's choices without excusing wrongdoing.</p>
+
+      <details>
+
+        <summary>Read full feature</summary>
+
+        <div class="article-body">
+
+          <p>Imagine having to think about where your next meal is going to come from or how you're going to pay for the basic needs of your family. For some people this isn't a problem that occurs once in a while. It's a problem they face on a daily basis. Poverty has been a real issue in the Philippines for a long time and as the cost of living continues to go up, it's become even more of a struggle for families who are already so poor.</p>
+
+          <p>So many people work hard just to get enough money to pay for food, transport, electricity and all the other basics. Having a job doesn't necessarily mean you can afford everything though. Some families still end up in a position where they can't afford to do anything at all.</p>
+
+          <p>Because of the difficulties they face some people may be driven to desperation and end up committing crime as a means of getting money or to provide for themselves. There are instances of theft and other crimes which are clearly linked to financial hardship. It is of course not the case that if you are poor you are a criminal. There are absolutely plenty of people who are poor and who will work their socks off and find legitimate ways of providing for their families.</p>
+
+          <p>The issue is that poverty can create circumstances in which people have very few options. If a person can't get a job, can't afford education, can't afford to feed their family then it's very difficult to get out of that situation. That doesn't excuse the crime, of course, but it does help to explain some of the reasons why crime occurs.</p>
+
+          <p>Rather than just focus on the punishment of people, we should also be looking at the problems which may lead someone to commit a crime. More jobs, better education and support for families in difficulty can all go a long way to prevent that.</p>
+
+          <p>At the end of the day everyone wants a better life. No one should have to be in a position where they are constantly worried about having enough food and enough money to get through the day. Poverty isn't something that's going to just go away overnight and you can't just ignore it and expect it to vanish.</p>
+
+          <p>Sometimes the real question isn't just why crime occurs but what kind of situation actually drives people to make those very difficult choices just to get by.</p>
+
+        </div>
+
+      </details>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- BALITA -->
+
+<section class="page" id="balita">
+
+  <div class="kicker">Mga balitang may kabuluhan</div>
+
+  <h2 class="section-heading">Balita</h2>
+
+  <p class="section-intro">Mga usaping pangkabuhayan at panlipunan na nakaaapekto sa pang-araw-araw na buhay ng mga Pilipino.</p>
+
+  <div class="balita-mark">BALITA · PILIPINAS · EKONOMIYA AT LIPUNAN</div>
+
+  <div class="article-list">
+
+    <article class="article">
+
+      <div class="article-label">Balita 01 · Kalamidad at kahirapan</div>
+
+      <h3>Natural Disasters and the Economic Struggles of Poor Communities: Paano Nakakaapekto ang Kalamidad sa Mahirap?</h3>
+
+      <details>
+
+        <summary>Basahin ang buong balita</summary>
+
+        <div class="article-body">
+
+          <p>Ang Pilipinas ay madalas makaranas ng mga natural disaster tulad ng bagyo, baha, lindol, at pagguho ng lupa. Malaki ang epekto ng mga kalamidad na ito lalo na sa mga mahihirap na pamilya. Marami ang nawawalan ng bahay, kabuhayan, at mahahalagang ari-arian. Dahil sa kakulangan ng pera, nahihirapan silang makabangon at maibalik ang kanilang normal na pamumuhay. May mga magulang na nawawalan ng trabaho dahil nasisira ang kanilang mga paninda, sakahan, at pinagkukunan ng kita. Naaapektuhan din ang pag-aaral ng mga bata kapag nasisira ang mga paaralan at kalsada. Ipinapakita nito na ang mga natural disaster ay hindi lamang nagdudulot ng panganib kundi nagpapalala rin ng kahirapan sa mga komunidad.</p>
+
+          <p>Sa kabila ng problemang ito, mahalagang magkaroon ng sapat na paghahanda at tulong mula sa pamahalaan. Dapat maglaan ng pondo para sa maayos na evacuation centers, pabahay, pagkain, at tulong pinansyal para sa mga pamilyang naapektuhan. Mahalaga rin ang pagpapagawa ng maayos na drainage system at iba pang proyektong makatutulong upang mabawasan ang epekto ng pagbaha. Dapat ding tulungan ang mga nawalan ng trabaho at kabuhayan upang makapagsimula muli. Hindi dapat pabayaan ang mga mahihirap na komunidad dahil mas nahihirapan silang makabangon pagkatapos ng kalamidad. Tandaan natin na ang paghahanda at pagtutulungan ay mahalaga upang maprotektahan ang buhay at kinabukasan ng bawat pamilya.</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>Mga Sanggunian</strong>
+
+          World Bank. (2022). Philippines Country Climate and Development Report.<br>
+
+          Asian Development Bank. (2021). Climate Change and Disaster Risk in the Philippines.
+
+        </div>
+
+      </details>
+
+    </article>
+
+    <article class="article">
+
+      <div class="article-label">Balita 02 · Sahod at gastusin</div>
+
+      <h3>Low Wage Versus Increasing Expenses: Sapat ba ang Sahod sa Pang-araw-araw na Pangangailangan?</h3>
+
+      <details>
+
+        <summary>Basahin ang buong balita</summary>
+
+        <div class="article-body">
+
+          <p>Isa sa mga malaking problemang kinakaharap ng mga Pilipino ay ang mababang sahod kumpara sa patuloy na pagtaas ng mga gastusin. Maraming manggagawa ang nagsisikap kumita upang matustusan ang kanilang pamilya, ngunit madalas ay hindi sapat ang kanilang sahod. Patuloy na tumataas ang presyo ng bigas, pagkain, kuryente, tubig, pamasahe, at iba pang pangangailangan. Dahil dito, maraming pamilya ang nahihirapang pagkasyahin ang kanilang kinikita. May mga magulang na napipilitang mangutang o maghanap ng karagdagang trabaho upang matustusan ang kanilang mga anak. Minsan, wala nang natitirang pera para sa ipon at mga biglaang pangangailangan. Ipinapakita nito na malaking hamon ang pagkakaroon ng maayos na pamumuhay kapag hindi nakakasabay ang sahod sa pagtaas ng presyo ng mga bilihin.</p>
+
+          <p>Sa kabila ng problemang ito, mahalagang gumawa ng mga hakbang upang mapabuti ang kalagayan ng mga manggagawa. Dapat tiyakin ng pamahalaan na makatarungan at sapat ang sahod upang matugunan ang pangunahing pangangailangan ng bawat pamilya. Mahalaga rin ang pagkakaroon ng mas maraming trabaho at benepisyo para sa mga empleyado. Dapat ding bantayan ang presyo ng mga pangunahing bilihin upang maiwasan ang hindi makatarungang pagtaas nito. Kailangan ang pagtutulungan ng pamahalaan, mga negosyante, at mamamayan upang magkaroon ng mas maayos na ekonomiya. Tandaan natin na ang bawat manggagawa ay nararapat makatanggap ng sapat na sahod para sa kanilang pagsisikap. Hindi dapat maging mahirap para sa isang pamilya ang matugunan ang kanilang pang-araw-araw na pangangailangan.</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>Mga Sanggunian</strong>
+
+          Philippine Statistics Authority (2025). Average Monthly Wage Rate of Time-Rated Workers in the Philippines.<br>
+
+          International Monetary Fund (2025). Philippines: 2025 Article IV Consultation.
+
+        </div>
+
+      </details>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- KOLUM -->
+
+<section class="page" id="kolum">
+
+  <div class="kicker">Mga pananaw at pagsusuri</div>
+
+  <h2 class="section-heading">Kolum</h2>
+
+  <p class="section-intro">Mga personal na pananaw tungkol sa mga suliraning panlipunan at pangkabuhayan.</p>
+
+  <div class="balita-mark">KOLUM · OPINYON · PANININDIGAN</div>
+
+  <div class="article-list">
+
+    <article class="article">
+
+      <div class="article-label">Kolum 01 · Zeb kolum 1</div>
+
+      <h3>Natural Disasters at ang Hirap sa Buhay ng Mahihirap na Komunidad</h3>
+
+      <details>
+
+        <summary>Basahin ang buong kolum</summary>
+
+        <div class="article-body">
+
+          <p>Ang mga natural na sakuna tulad ng bagyo, baha, lindol, at pagguho ng lupa ay malaking problema sa ating bansa, lalo na sa mga mahihirap na komunidad. Kapag may dumating na malakas na bagyo, maraming bahay ang nasisira at maraming pamilya ang nawawalan ng tirahan. Ang mga taong mahihirap ang mas nahihirapan dahil kadalasan ay wala silang sapat na pera para makabangon muli. Marami rin ang nawawalan ng trabaho dahil nasisira ang kanilang mga pananim, tindahan, at kagamitan.</p>
+
+          <p>Ayon sa World Bank, kabilang ang Pilipinas sa mga bansang lubhang nanganganib sa mga natural na sakuna. Ipinapakita nito na maraming Pilipino ang maaaring mawalan ng kabuhayan dahil sa mga ganitong pangyayari. Mas masakit isipin na ang mga pamilyang kapos na nga sa pera ay lalo pang naghihirap kapag may sakuna. Kaya mahalagang bigyan ng pansin ang kalagayan ng mga mahihirap tuwing may ganitong problema.</p>
+
+          <p>Hindi dapat matapos ang pagtulong pagkatapos ng sakuna dahil matagal bago makabangon ang mga pamilyang nawalan ng lahat. Sa isang pag-aaral ng Philippine Institute for Development Studies (PIDS), nakita na ang mga bagyo at baha ay may masamang epekto sa kita ng mga pamilya sa Pasay City. Ibig sabihin, kahit simpleng pagbaha ay maaaring magdulot ng malaking problema sa kanilang pang-araw-araw na buhay. May mga pamilyang napipilitang mangutang para makabili ng pagkain at makapagpagawa ng kanilang bahay.</p>
+
+          <p>Dahil dito, mahalagang magkaroon ng sapat na tulong mula sa pamahalaan, tulad ng pagkain, ligtas na tirahan, at perang pantustos sa kanilang pangangailangan. dapat ding magbigay ng tulong sa mga nawalan ng trabaho upang muli silang makapaghanapbuhay. Mahalaga rin ang paghahanda bago dumating ang sakuna upang maiwasan ang mas malaking pinsala.</p>
+
+          <p>Hindi sapat ang simpleng pangako dahil kailangan ng tunay na aksyon at malasakit sa mga mahihirap. Sa huli, ang pagprotekta sa mga mahihirap na komunidad ay hindi lamang pagtulong sa panahon ng sakuna, kundi pagbibigay rin sa kanila ng mas maayos at ligtas na kinabukasan.</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>Mga Sanggunian</strong>
+
+          World Bank - Philippines: Disaster Risks and Economic Losses - datos tungkol sa epekto ng mga sakuna sa mahihirap na Pilipino.<br>
+
+          PIDS - The Impact of Natural Disasters on Income and Poverty - Pag-aaral tungkol sa epekto ng bagyo at baha sa kita ng mga pamilya sa Pasay City.
+
+        </div>
+
+      </details>
+
+    </article>
+
+    <article class="article">
+
+      <div class="article-label">Kolum 02 · Edukasyon</div>
+
+      <h3>Hindi Pantay na Pagkakataon sa Pagkakaroon ng De-kalidad na Edukasyon</h3>
+
+      <details>
+
+        <summary>Basahin ang buong kolum</summary>
+
+        <div class="article-body">
+
+          <p>Ang edukasyon ay mahalaga sa buhay ng bawat bata dahil ito ang nagbibigay ng kaalaman at magandang kinabukasan. Ngunit hindi lahat ng estudyante ay may pantay na pagkakataong makakuha ng de-kalidad na edukasyon. May mga batang nag-aaral sa magagandang paaralan na may kumpletong libro, silid-aralan, at kagamitan. Samantala, may mga estudyanteng pumapasok sa mga paaralang kulang sa upuan, libro, at guro. Mas nahihirapan ang mga batang mahihirap dahil hindi lahat ng kanilang pamilya ay kayang bumili ng gamit sa paaralan o magkaroon ng internet. Ayon sa World Bank, mas kaunti ang pagkakataon ng mga batang mula sa mahihirap na pamilya na makapasok at makatapos ng mas mataas na antas ng edukasyon. Dagdag pa rito, ayon sa UNICEF, 90 porsiyento ng mga batang Pilipino na edad sampu ay hindi kayang bumasa at umunawa ng simpleng teksto batay sa pag-aaral noong 2019. Ipinapakita nito na hindi sapat ang pagkakaroon lamang ng paaralan dahil mahalaga rin na may maayos na pagtuturo at sapat na kagamitan ang bawat estudyante.</p>
+
+          <p>Hindi dapat maging hadlang ang kahirapan upang makamit ng isang bata ang kanyang mga pangarap. Hindi makatarungan na ang mga batang may kaya ay mas maraming pagkakataong matuto habang ang mga mahihirap ay nahihirapan dahil sa kakulangan ng suporta. Dapat tiyakin ng pamahalaan na lahat ng paaralan ay may sapat na silid-aralan, libro, guro, at iba pang gamit sa pag-aaral. Mahalaga ring magkaroon ng libreng kagamitan at tulong pinansyal para sa mga estudyanteng nangangailangan. Ayon sa World Bank, mas kulang sa mga kagamitan at pasilidad ang mga paaralang nagsisilbi sa mahihirap na komunidad kumpara sa mga paaralang may mas mayayamang estudyante. Kaya kailangan ng patas na pagbibigay ng pondo at suporta sa bawat paaralan. Dapat ding pakinggan ang mga estudyanteng nahihirapan upang malaman kung ano ang kanilang kailangan. Ang edukasyon ay hindi lamang para sa mayayaman kundi para sa lahat ng tao anuman ang kanilang katayuan sa buhay. Sa huli, ang pantay na pagkakataon sa edukasyon ay susi upang mabigyan ang bawat bata ng pag-asang magkaroon ng mas magandang kinabukasan.</p>
+
+        </div>
+
+        <div class="references">
+
+          <strong>Mga Sanggunian</strong>
+
+          World Bank - Overcoming Poverty and Inequality in the Philippines.<br>
+
+          UNICEF Philippines - Education.<br>
+
+          World Bank - Assessing Basic Education Service Delivery in the Philippines.
+
+        </div>
+
+      </details>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- ABOUT US -->
+
+<section class="page about-page" id="about">
+
+  <img class="about-image"
+
+       src="https://i.postimg.cc/x8frC6Lw/att-Vc-Y-17f9Re-CWZ674Gtsx-KPy-Igx6IQx-I1xw-Eu-Xj-MIz-Ec.jpg"
+
+       alt="About Us visual">
+
+  <div class="about-overlay">
+
+    <div class="kicker">The people and purpose behind the publication</div>
+
+    <h2>About Us</h2>
+
+    <p>
+
+      UGAT is a publication focused on socioeconomic issues that shape
+
+      communities and everyday life in the Philippines. Through editorials,
+
+      feature stories, news, and opinion columns, we aim to bring attention
+
+      to concerns such as poverty, inequality, education, livelihood,
+
+      food security, and the challenges faced by Filipino families.
+
+    </p>
+
+    <p style="margin-top:18px">
+
+      We believe that understanding society begins by looking at its roots.
+
+      Every story deserves attention, every voice deserves to be heard,
+
+      and every person deserves the opportunity to build a better future.
+
+    </p>
+
+    <div class="about-note">UGAT · UNDERSTANDING THE ROOTS OF OUR SOCIETY</div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div>UGAT <span>·</span> THE SOCIOECONOMIC JOURNAL</div>
+
+  <div style="margin-top:7px">Stories rooted in society. Perspectives grounded in reality.</div>
+
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script>
+
+const pages = document.querySelectorAll(".page");
+
+const navButtons = document.querySelectorAll("nav button");
+
+const navigation = document.getElementById("navigation");
+
+const menuToggle = document.getElementById("menuToggle");
+
+function showPage(pageId){
+
+  pages.forEach(page => {
+
+    page.classList.toggle("active", page.id === pageId);
+
+  });
+
+  navButtons.forEach(button => {
+
+    button.classList.toggle("active", button.dataset.page === pageId);
+
+  });
+
+  navigation.classList.remove("open");
+
+  menuToggle.setAttribute("aria-expanded","false");
+
+  window.scrollTo({top:0,behavior:"smooth"});
+
+}
+
+navButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    showPage(button.dataset.page);
+
+  });
+
+});
+
+menuToggle.addEventListener("click", () => {
+
+  const isOpen = navigation.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded",String(isOpen));
+
+});
+
+document.getElementById("backTop").addEventListener("click", () => {
+
+  window.scrollTo({top:0,behavior:"smooth"});
+
+});
+
+// Allow direct links such as #balita to open the correct section.
+
+function openHashPage(){
+
+  const pageId = location.hash.replace("#","");
+
+  if(pageId && document.getElementById(pageId)?.classList.contains("page")){
+
+    showPage(pageId);
+
+  }
+
+}
+
+window.addEventListener("hashchange",openHashPage);
+
+</script>
+
+</body>
+
+</html>
+    
+  </body>
+  
+</html>
